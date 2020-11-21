@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="boxForm">
+
+        <h1>Contactez-nous
+            <span class="logoTitre">
+                <img src="logoPlane.svg" alt="logo plane">
+            </span>
+        </h1>
+
+
+        <form>
+
+            <label class="labelEmail" for="email">Entrez votre Email</label>
+            <input type="email" id="email" name="email" class="emailInp" required maxlength="50" placeholder="Entrez votre Email">
+
+
+            <div class="flex2Inputs">
+
+                <div class="flexLeftInp">
+                    <label for="prenom" class="labelFlex">Entrez votre Prénom</label>
+                    <input type="text" class="flexInp" id="prenom" name="prenom" required maxlength="35" placeholder="Entrez votre Prénom">
+                </div>
+
+                <div class="flexRightInp">
+                    <label for="nom" class="labelFlex">Entrez votre Nom</label>
+                    <input type="text" id="nom" name="nom" class="flexInp" required maxlength="35" placeholder="Entrez votre Nom">
+                </div>
+
+            </div>
+
+        
+            <label for="inpSelect" class="labelSelect">Sélectionne ta Catégorie</label>
+            <select name="select" id="inpSelect">
+                <option value="">Select...</option>
+                <option value="1">Option #1</option>
+                <option value="2">Option #2</option>
+                <option value="3">Option #3</option>
+            </select>
+
+
+            <label for="txtArea" class="labelTxt">Dites nous quelque chose :</label>
+            <textarea name="txt" id="txtArea" cols="50" rows="10"></textarea>
+
+            <button>Envoyez</button>
+
+        </form>
+
+    </div>
+
+
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
